@@ -1,0 +1,4 @@
+@echo off
+where gradle >nul 2>nul
+if errorlevel 1 (echo Gradle is not on PATH. Install Android Studio or Gradle 8.10.2. & exit /b 1)
+gradle %*
